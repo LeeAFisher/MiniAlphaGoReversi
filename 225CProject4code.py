@@ -1,11 +1,10 @@
 import numpy as np # linear algebra
 import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 import sys
-#matplotlib inline
+#This code uses my home made Neural Network, the code trains the network to understand what constitutes a "good move" in Reversi - Lee Fisher
 
 # Read the data
 train_data = pd.read_csv('gamedata.csv')
-#test_data = pd.read_csv("test.csv")
 
 
 # Set up the data
