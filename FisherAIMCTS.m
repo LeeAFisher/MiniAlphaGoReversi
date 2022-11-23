@@ -1,22 +1,5 @@
 function  [u,currentColor,pass] = FisherAIMCTS(u,currentColor,pass,N,switchNum)
 %% AIMCTS Monte Carlo Tree Search
-%
-%  [u,currentColor,pass] = AIMCTS(u,currentColor,pass,N,switchNum)
-%  implements Monte Carlo Tree Search (MCTS) algorithm. 
-%
-% - N is the upper bound for the rollout number and nodes. 
-% - swtichNum is used to swtich from AItree and AIMCTS since rollout in the early stage is too costly. 
-% - pweigth is the weight used in the initialization of winning rate.
-%  winning rate = pweight*positionvalue/sum(sum(positionvalue))
-%  Larger pweight will emphasize more on the position value. 
-%  
-% [u,currentColor,pass] = AIMCTS(u,currentColor,pass,3000+k*10,40,1.2);
-%
-% This is uses the values from the NN to do MCTS. 
-%
-%
-% Long Chen 2019. May. 24.
-
 
 %Import the weights and biases once at the beginning.
 W = cell(3,1);
